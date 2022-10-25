@@ -42,7 +42,7 @@ TSS的FAPI目标是让用户更容易地使用TPM2.0最常用的功能。因此�
 * P_ECCP256这个配置的签名机制时ECDSA，密钥使用NIST ECC素数域256比特非对称密钥。
 
 配置文件中的路径描述用于FAPI查找，密钥，Policies，NV，和其他的TPM对象和资源实体。路径的基本结构如下：
-<Profile name> / <Hierarchy> / <Object Ancestor> / key tree
+\<Profile name\> / \<Hierarchy\> / \<Object Ancestor\> / key tree
 
 如果在使用FAPI时忽略了配置文件名称，那它将使用默认的配置。如果没有设置组织（Hierarchy），那么将使用默认的存储组织架构，存储组织架构叫做H_S，背书组织架构（Endorsement Hierarchy）是H_E，平台组织架构（Platform Hierarchy）是H_P。一个对象的父对象可以是如下的值：
 * SNK：不可迁移密钥的系统父对象。
